@@ -1,0 +1,16 @@
+@media only screen and (max-width: 600px) {
+  .c-subtitle {
+    font-size: 2px; /* Adjust this value as needed */
+  }
+  .content-container, {
+    padding: 12px;
+  }
+}
+.c-subtitle{
+    font-size: var(--font-sub-title);
+    font-weight: 600;
+    color: var(--subtitle-color);
+}
+.content{
+    background-color:var(--content-bg) ;
+}
