@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE13 | 🌱</title>
+    <link rel="icon" type="image/x-icon" href="./CODE13.png">
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/index.css">
+    <link rel="stylesheet" href="../Style/c-lan.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="light">
+    <div>
+        <header class="row g-0 header-container ">
+            <div class="row g-0 py-1 py-md-0 justify-content-center px-2 px-md-0">
+                <div class="row g-0 col-11 col-md-11 justify-content-center align-items-center">
+                    <div class="col-7 col-md-2 logo">
+                        <label for="logo-name" class="logo-name pointer-cursor">CODE<span
+                                class="logo-part">13</span></label>
+                    </div>
+                    <div class="row g-0 col-md-9 d-none d-md-block lang-list font-sans">
+                        <a href="../C/c-lan.html">C</a>
+                        <a href="../C++/cplus-lan.html">C++</a>
+                        <a href="../Java/java-lan.html">JAVA</a>
+                        <a href="../Python/python-lan.html">PYTHON</a>
+                        <a href="../Mysql/mysql-lan.html">MYSQL</a>
+                        <a href="../HTML/html-lan.html">HTML</a>
+                        <a href="../CSS/css-lan.html">CSS</a>
+                        <a href="../Javascript/script-lan.html">JAVASCRIPT</a>
+                        <a href="../React/react-lan.html">REACT</a>
+                        <a href="../Linux/linux-lan.html">LINUX</a>
+                    </div>
+
+                    <div class="row g-0 col-3 col-md-1 justify-content-center screen-mode">
+                        <div class="">
+
+                        </div>
+                    </div>
+                    <div class="d-flex d-md-none col-2  justify-content-end">
+                        <img src="../menu-bar.png" alt="menu logo" class="menu-logo">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="row g-0 justify-content-center py-5 py-md-5">
+                <div class="row  g-0 col-10 col-md-8  py-5 py-md-4 con-container px-2 px-md-3">
+                    <div class="py-4 py-md-3 ">
+                        <div class="con-title">Bitwise operator in c language</div>
+                        <p class="con-description mt-3 mt-md-3">
+                            The bitwise operators are the operators used to perform the operations on the
+                            data at the bit-level. When we perform the bitwise operations, then it is also
+                            known as bit-level programming. It consists of two digits, either 0 or 1. It is mainly
+                            used in numerical computations to make the calculations faster.
+                        </p>
+                        <p>
+                        <div class="px-md-5 px-0">
+                            <table class="table modify-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Operator</th>
+                                        <th scope="col">Meaning of Operator</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>&</td>
+                                        <td>Bitwise AND operator</td>
+                                    </tr>
+                                    <tr>
+                                        <td>^</td>
+                                        <td>Bitwise OR Operator</td>
+                                    </tr>
+                                    <tr>
+                                        <td>|</td>
+                                        <td>Bitwise exclusive OR operator
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>~</td>
+                                        <td>One's complement operator (unary operator)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            << </td>
+                                        <td>Left shift operator</td>
+                                    </tr>
+                                    <tr>
+                                        <td>>></td>
+                                        <td>Right shift operator</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <p>
+                                Let's look at the truth table of the bitwise operators
+                            </p>
+                            <div class="px-md-5 px-0">
+                                <table class="table modify-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">X</th>
+                                            <th scope="col">Y</th>
+                                            <th scope="col">X&Y</th>
+                                            <th scope="col">X|Y</th>
+                                            <th scope="col">X^Y</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                    <div class=" py-4 py-md-3">
+                        <p class="con-title">
+                            Conditional operator
+                        </p>
+                        <p class="con-description mt-3 mt-md-3">
+                            Conditional operator is used for check the condition and it contains the ternary
+                            operator ? And : operator
+                        <p>
+                            <span class="text-underline-bg">Syntax</span> :exp1 ? exp2 : exp3;
+                        </p>
+
+                        <p>
+                            Exp1 is always condition and exp2 and exp3 are the options if exp1 is true then
+                            exp2 get executed and if exp1 is false then exp3 executed.<br>
+                            for Example.
+                        </p>
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-8 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-btn" id="copy-btn">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+                                    <span class="code-color-k">#include</span> &lt;stdio.h&gt;<br>
+
+                                    <span class="code-color-k">int</span> <span class="code-color-m">main</span>(){<br>
+                                    &nbsp;<span class="code-color-c">//Write C code here </span><br>
+                                    <span class="code-color-k">int</span> a = 10;<br>
+                                    <span class="code-color-m">printf</span>("%s", a > 2 ?"<span
+                                        class="code-color-m">true</span>" : "<span class="code-color-m">false</span>");
+                                    <!-- &nbsp;<span class="code-color-c">/*printing information <br>&nbsp;Multi-Line Comments*/</span><br> -->
+                                    <!-- &nbsp;<span class="code-color-m">printf</span>("Hello C");<br> -->
+                                    <span class="code-color-k">return</span> 0;<br>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+
+                        </p>
+                    </div>
+                    <div class=" py-4 py-md-3">
+                        <p class="con-title">
+                            Data Type
+                        </p>
+                        <p class="con-description mt-3 mt-md-3">
+                        <div>
+                            In C programming language, data types specify the type of data that variables can store.
+                            Here are some commonly used data types in C:
+                            <p>
+                            <div>
+                                <span class="text-underline-bg">Basic Data Types</span>:<br>
+                                <span class="content-sub-title">int</span>: Used to store integer values.<br>
+                                <span class="content-sub-title">float</span>: Used to store floating-point numbers (real
+                                numbers).<br>
+                                <span class="content-sub-title">char</span>: Used to store single characters.
+                            </div>
+                            <br>
+                            <div>
+                                <span class="text-underline-bg">Derived Data Types</span>:<br>
+                                <span class="content-sub-title">Array</span>: A collection of elements of the same data
+                                type.<br>
+                                <span class="content-sub-title">Pointer</span>: A variable that stores the memory
+                                address of another variable.<br>
+                                <span class="content-sub-title">Structure</span>: A user-defined data type that allows
+                                grouping different data types under one
+                                name.<br>
+                                <span class="content-sub-title">Union</span>: Similar to structure but it uses the same
+                                memory location for all its
+                                members.<br>
+                                <span class="content-sub-title">Enum</span>: A user-defined data type used to assign
+                                names to integral constants.
+
+                            </div>
+                            <br>
+                            <div>
+                                <span class="text-underline-bg">Modifier Data Types</span>:<br>
+                                <span class="content-sub-title">short</span>: Used to declare integers with smaller
+                                range than int.<br>
+                                <span class="content-sub-title">long</span>: Used to declare integers with larger range
+                                than int.<br>
+                                <span class="content-sub-title">signed</span>: Used to declare signed integers.<br>
+                                <span class="content-sub-title">unsigned</span>: Used to declare unsigned integers.<br>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" py-4 py-md-3">
+                        <p class="con-title">
+                            ASCII In C Language
+                        </p>
+                        <p class="con-description mt-3 mt-md-3">
+                        <div>
+                            The full form of ASCII is the American Standard Code for information
+                            interchange. It is a character encoding scheme used for electronics
+                            communication. Each character or a special character is represented by some
+                            ASCII code, and each ASCII code occupies 7 bits in memory.
+                        </div>
+                        <div>
+
+                            <p>
+                                There is Total 256 Ascii code in c language
+                                Some of the important ASCII code given below<br>
+                                A to Z = 65 to 90<br>
+                                a to z = 97 to 122<br>
+                                0 to 9 = 48 to 57
+                            </p>
+
+                        </div>
+
+                        </p>
+                    </div>
+                    <div class=" py-4 py-md-3">
+                        <p class="con-title">
+                            Format Specifier in c language
+                        </p>
+                        <p class="con-description mt-3 mt-md-3">
+                        <div>
+                            The Format Specifier is a string used in the formatted input and output functions.
+                            The format string determines the format of the input and output. The format
+                            string always starts with a '%' character
+                        </div>
+                        <br>
+                        <div class="px-md-5 px-0">
+                            <table class="table modify-table">
+                                <thead>
+                                    <tr>
+
+                                        <th scope="col">
+                                            Format Specifier
+                                        </th>
+                                        <th scope="col">
+                                            Description
+                                        </th>
+                                    </tr>
+
+                                </thead>
+                                <tr>
+                                    <td>%d or %i </td>
+                                    <td>It is used to print the signed integer value where signed integer means
+                                        that the variable can hold both positive and negative values.</td>
+                                </tr>
+                                <tr>
+                                    <td>%u</td>
+                                    <td>t is used to print the unsigned integer value where the unsigned integer
+                                        means that the variable can hold only positive value.</td>
+                                </tr>
+                                <tr>
+                                    <td>%o</td>
+                                    <td>It is used to print the octal unsigned integer where octal integer value
+                                        always starts with a 0 value.</td>
+                                </tr>
+                                <tr>
+                                    <td>%x</td>
+                                    <td>It is used to print the hexadecimal unsigned integer where the
+                                        hexadecimal integer value always starts with a 0x value. In this,
+                                        alphabetical characters are printed in small letters such as a, b, c, etc.</td>
+                                </tr>
+                                <tr>
+                                    <td>%X</td>
+                                    <td>It is used to print the hexadecimal unsigned integer, but %X prints the
+                                        alphabetical characters in uppercase such as A, B, C, etc.</td>
+                                </tr>
+                                <tr>
+                                    <td>%f</td>
+                                    <td>It is used for printing the decimal floating-point values. By default, it prints
+                                        the 6 values after '.'.</td>
+                                </tr>
+                                <tr>
+                                    <td>%e/%E</td>
+                                    <td>It is used for scientific notation. It is also known as Mantissa or Exponent
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>%g</td>
+                                    <td>It is used to print the decimal floating-point values, and it uses the fixed
+                                        precision, i.e., the value after the decimal in input would be exactly the
+                                        same as the value in the output</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        %p
+                                    </td>
+                                    <td>
+                                        It is used to print the address in a hexadecimal form
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>%c</td>
+                                    <td>It is used to print the unsigned character.</td>
+                                </tr>
+                                <tr>
+                                    <td>%s</td>
+                                    <td>It is used to print the strings.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        %ld
+                                    </td>
+                                    <td>
+                                        It is used to print the long-signed integer value
+                                    </td>
+                                </tr>
+
+                                <tbody>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        </p>
+                    </div>
+                    <div class="row g-0 ">
+                        <div class="col-12 d-flex justify-content-between ">
+                            <button class="prev-btn" id="prev-btn">Prev</button>
+                            <a href="./second-c-tutorial.html"><button class="next-btn" id="next-btn">Next</button></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="row g-0 footer-container justify-content-center">
+            <div class="footer col-11 col-md-6 text-center">
+                <label for="" class="footer">© 2024 All Rights Reserved. CODE<span class="sub-title">13</span></label>
+            </div>
+        </footer>
+
+    </div>
+    <div>
+
+    </div>
+
+</body>
+
+<script src="../Script/script.js"></script>
+<script>
+    $(document).ready(
+        () => {
+
+        }
+    );
+</script>
+
+</html>

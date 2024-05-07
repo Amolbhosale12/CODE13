@@ -2,15 +2,43 @@
   .c-subtitle {
     font-size: 2px; /* Adjust this value as needed */
   }
-  .content-container, {
+  .content-container {
     padding: 12px;
   }
+  /* .con-description {
+    font-size: 9px;
+  font-weight: 500;
+  } */
+  .copy-code-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
 }
-.c-subtitle{
-    font-size: var(--font-sub-title);
-    font-weight: 600;
-    color: var(--subtitle-color);
+.c-subtitle {
+  font-size: var(--font-sub-title);
+  font-weight: 600;
+  color: var(--subtitle-color);
 }
-.content{
-    background-color:var(--content-bg) ;
+.content {
+  background-color: var(--content-bg);
 }
+.card-container {
+  border: 2px solid #dde6e6;
+}
+.c-logo {
+  width: 50px;
+  height: 50px;
+}
+.header-problem {
+  background-color: #30fa52;
+  border-radius: 5px;
+  padding: 0px 7px;
+}
+.con-container {
+  background-color: var(--con-description-bg);
+  border-radius: 15px;
+}
+
+

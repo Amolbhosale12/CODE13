@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE13 | 🌱</title>
+    <link rel="icon" type="image/x-icon" href="./CODE13.png">
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/index.css">
+    <link rel="stylesheet" href="../Style/c-lan.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="light">
+    <div>
+        <header class="row g-0 header-container ">
+            <div class="row g-0 py-1 py-md-0 justify-content-center px-2 px-md-0">
+                <div class="row g-0 col-11 col-md-11 justify-content-center align-items-center">
+                    <div class="col-7 col-md-2 logo">
+                        <label for="logo-name" class="logo-name pointer-cursor">CODE<span
+                                class="logo-part">13</span></label>
+                    </div>
+                    <div class="row g-0 col-md-9 d-none d-md-block lang-list font-sans">
+                        <a href="../C/c-lan.html">C</a>
+                        <a href="../C++/cplus-lan.html">C++</a>
+                        <a href="../Java/java-lan.html">JAVA</a>
+                        <a href="../Python/python-lan.html">PYTHON</a>
+                        <a href="../Mysql/mysql-lan.html">MYSQL</a>
+                        <a href="../HTML/html-lan.html">HTML</a>
+                        <a href="../CSS/css-lan.html">CSS</a>
+                        <a href="../Javascript/script-lan.html">JAVASCRIPT</a>
+                        <a href="../React/react-lan.html">REACT</a>
+                        <a href="../Linux/linux-lan.html">LINUX</a>
+                    </div>
+
+                    <div class="row g-0 col-3 col-md-1 justify-content-center screen-mode">
+                        <div class="">
+
+                        </div>
+                    </div>
+                    <div class="d-flex d-md-none col-2  justify-content-end">
+                        <img src="../menu-bar.png" alt="menu logo" class="menu-logo">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="row g-0 justify-content-center py-5 py-md-5">
+                <div class="row  g-0 col-10 col-md-8  py-5 py-md-4 con-container px-2 px-md-3">
+                    <!-- <div>
+                        <img src="../Media/Images/letter-c.png" alt="c logo" class="c-logo">
+                    </div> -->
+                    <div class="py-4 py-md-3 ">
+                        <div class="con-title" id="basic-Intro">Comments in c language</div>
+                        <p class="con-description mt-3 mt-md-3">
+                            Comments in C language are used to provide information about lines of code. It is
+                            widely used for documenting code. There are 2 types of comments in the C
+                            language.<br>
+                            1. <span class="content-sub-title">Single Line Comments</span><br>
+                            2. <span class="content-sub-title">Multi-Line Comments</span><br>
+                            For Example
+                            <!--code for single line comments-->
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-8 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-btn" id="copy-btn">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+                                    <span class="code-color-k">#include</span> &lt;stdio.h&gt;<br>
+                                    <span class="code-color-k">int</span> <span class="code-color-m">main</span>(){<br>
+                                    &nbsp;<span class="code-color-c">//Single Line
+                                        Comments</span><br>
+                                    &nbsp;<span class="code-color-c">/*Multi-Line <br>&nbsp;
+                                        Comments*/</span><br>
+                                    &nbsp;<span class="code-color-m">printf</span>("Hello C");<br>
+                                    <span class="code-color-k">return</span> 0;<br>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="py-4 py-md-3 ">
+                        <div class="con-title" id="basic-Intro">Compiler and Interpreter</div>
+                        <p class="con-description mt-3 mt-md-4">
+                            <span class="text-underline-bg">Compiler</span>:<br>
+                            It is a translator which takes input i.e., High-Level Language, and produces an
+                            output of low-level language i.e. machine or assembly language.<br>
+                            • A compiler is more intelligent than an assembler it checks all kinds of limits,
+                            ranges, errors, etc.<br>
+                            • But its program run time is more and occupies a larger part of memory. It
+                            has slow speed because a compiler goes through the entire program and
+                            then translates the entire program into machine codes.
+                        <div class="">
+                            <img src="../Media/Images/compiler.png" alt="">
+
+                        </div>
+                        </p>
+                        <p class="con-description">
+                            <span class="text-underline-bg">Interpreter</span>:<br>
+                            An interpreter is a program that translates a programming language into a
+                            comprehensible language. <br>
+                            • It translates only one statement of the program at a time.<br>
+                            • Interpreters, more often than not are smaller than compilers
+                        <div class="">
+                            <img src="../Media/Images/Interpreter.png" alt="">
+
+                        </div>
+                        </p>
+                        <p class="col-6 col-sm-12  ">
+                        <table class="table table-responsive table-difference ">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Compiler</th>
+                                    <th scope="col">Interpreter</th>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Compiler scans the whole program in one go.</td>
+                                    <td>Translates program one statement at a time.</td>
+                                </tr>
+                                <tr>
+                                    <td>As it scans the code in one go,the errors(if any) any shown at the end together
+                                    </td>
+                                    <td>Considering it scans code one line at a time,error are shown line by line</td>
+                                </tr>
+                                <tr>
+                                    <td>It converts the source code into object code</td>
+                                    <td>It does not coverts the source code into object code instead it scans it line by
+                                        line</td>
+                                </tr>
+                                <tr>
+                                    <td>It does not require source code for later execution.</td>
+                                    <td>It require source code for later execution.</td>
+                                </tr>
+                                <tr>
+                                    <td>Eg. C ,C++,C#</td>
+                                    <td>Eg. Python,Ruby,Perl,MATLAB etc.</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                        </p>
+                    </div>
+                    <div class="py-4 py-md-3 ">
+                        <div class="con-title" id="basic-Intro">Pointer</div>
+                        <p class="con-description mt-3 mt-md-3">
+                            In C language, a pointer is a variable that stores the memory address of another variable.
+                            Pointers are widely used in C for various purposes such as dynamic memory allocation,
+                            accessing array elements, and implementing data structures like linked lists and trees.
+                        </p>
+                    </div>
+                    <div class="row g-0 ">
+                        <div class="col-12 d-sm-flex justify-content-between ">
+                            <button class="prev-btn mb-2 mb-sm-0" id="prev-btn">Prev</button>
+                            <a href="./first-c-tutorial.html"><button class="next-btn" id="next-btn">Next</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="row g-0 footer-container justify-content-center">
+            <div class="footer col-11 col-md-6 text-center">
+                <label for="" class="footer">© 2024 All Rights Reserved. CODE<span class="sub-title">13</span></label>
+            </div>
+        </footer>
+
+    </div>
+    <div>
+
+    </div>
+
+</body>
+<script src="../Script/script.js"></script>
+
+</html>
