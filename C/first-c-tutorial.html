@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../Style/style.css">
     <link rel="stylesheet" href="../Style/index.css">
     <link rel="stylesheet" href="../Style/c-lan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -16,8 +19,8 @@
 <body class="light">
     <div>
         <header class="row g-0 header-container ">
-            <div class="row g-0 py-1 py-md-0 justify-content-center px-2 px-md-0">
-                <div class="row g-0 col-11 col-md-11 justify-content-center align-items-center">
+            <div class="row g-0 py-1 py-md-0 justify-content-center px-2 px-md-0 nav-bar-container">
+                <div class="row g-0 col-11 col-md-11 justify-content-center align-items-center nav-bar">
                     <div class="col-7 col-md-2 logo">
                         <label for="logo-name" class="logo-name pointer-cursor">CODE<span
                                 class="logo-part">13</span></label>
@@ -26,7 +29,6 @@
                         <a href="../C/c-lan.html">C</a>
                         <a href="../C++/cplus-lan.html">C++</a>
                         <a href="../Java/java-lan.html">JAVA</a>
-                        <a href="../Python/python-lan.html">PYTHON</a>
                         <a href="../Mysql/mysql-lan.html">MYSQL</a>
                         <a href="../HTML/html-lan.html">HTML</a>
                         <a href="../CSS/css-lan.html">CSS</a>
@@ -41,16 +43,31 @@
                         </div>
                     </div>
                     <div class="d-flex d-md-none col-2  justify-content-end">
-                        <img src="../menu-bar.png" alt="menu logo" class="menu-logo">
+                        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
                     </div>
                 </div>
+            </div>
+            <div class="row g-0 justify-content-center d-md-none d-none  " id="menu-list-links">
+                <ul class="col-10">
+                    <li><a href="../C/c-lan.html">C</a></li>
+                    <li><a href="../C++/cplus-lan.html">C++</a></li>
+                    <li><a href="../Java/java-lan.html">JAVA</a></li>
+                    <li><a href="../Mysql/mysql-lan.html">MYSQL</a></li>
+                    <li><a href="../HTML/html-lan.html">HTML</a></li>
+                    <li><a href="../CSS/css-lan.html">CSS</a></li>
+                    <li><a href="../Javascript/script-lan.html">JAVASCRIPT</a></li>
+                    <li><a href="../React/react-lan.html">REACT</a></li>
+                    <li><a href="../Linux/linux-lan.html">LINUX</a></li>
+
+                </ul>
             </div>
         </header>
 
         <div class="content">
             <div class="row g-0 justify-content-center py-5 py-md-5">
                 <div class="row  g-0 col-10 col-md-8  py-5 py-md-4 con-container px-2 px-md-3">
-                    <div class="py-4 py-md-3 ">
+                    <div class="py-4 py-md-3 " id="bitwise-section">
                         <div class="con-title">Bitwise operator in c language</div>
                         <p class="con-description mt-3 mt-md-3">
                             The bitwise operators are the operators used to perform the operations on the
@@ -60,7 +77,7 @@
                         </p>
                         <p>
                         <div class="px-md-5 px-0">
-                            <table class="table modify-table">
+                            <table class=" con-description  table modify-table">
                                 <thead>
                                     <tr>
                                         <th scope="col">Operator</th>
@@ -102,7 +119,7 @@
                                 Let's look at the truth table of the bitwise operators
                             </p>
                             <div class="px-md-5 px-0">
-                                <table class="table modify-table">
+                                <table class="con-description table modify-table">
                                     <thead>
                                         <tr>
                                             <th scope="col">X</th>
@@ -147,11 +164,11 @@
                         </div>
                         </p>
                     </div>
-                    <div class=" py-4 py-md-3">
+                    <div class="con-description py-4 py-md-3">
                         <p class="con-title">
                             Conditional operator
                         </p>
-                        <p class="con-description mt-3 mt-md-3">
+                        <p class=" mt-3 mt-md-3">
                             Conditional operator is used for check the condition and it contains the ternary
                             operator ? And : operator
                         <p>
@@ -165,7 +182,7 @@
                         </p>
                         <div class="row g-0 justify-content-center p-2 copy-code">
 
-                            <div class="col-12 col-md-8 row g-0 copy-code-container">
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
                                 <div
                                     class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
                                     <div class="col-12 col-md-2  text-center">
@@ -179,7 +196,7 @@
                                     <span class="code-color-k">#include</span> &lt;stdio.h&gt;<br>
 
                                     <span class="code-color-k">int</span> <span class="code-color-m">main</span>(){<br>
-                                    &nbsp;<span class="code-color-c">//Write C code here </span><br>
+                                    <span class="code-color-c">//Write C code here </span><br>
                                     <span class="code-color-k">int</span> a = 10;<br>
                                     <span class="code-color-m">printf</span>("%s", a > 2 ?"<span
                                         class="code-color-m">true</span>" : "<span class="code-color-m">false</span>");
@@ -194,12 +211,12 @@
 
                         </p>
                     </div>
-                    <div class=" py-4 py-md-3">
+                    <div class=" py-4 py-md-3" id="data-type-section">
                         <p class="con-title">
                             Data Type
                         </p>
-                        <p class="con-description mt-3 mt-md-3">
-                        <div>
+                        <p class=" mt-3 mt-md-3">
+                        <div class="con-description">
                             In C programming language, data types specify the type of data that variables can store.
                             Here are some commonly used data types in C:
                             <p>
@@ -244,8 +261,8 @@
                         <p class="con-title">
                             ASCII In C Language
                         </p>
-                        <p class="con-description mt-3 mt-md-3">
-                        <div>
+                        <p class=" mt-3 mt-md-3">
+                        <div class="con-description">
                             The full form of ASCII is the American Standard Code for information
                             interchange. It is a character encoding scheme used for electronics
                             communication. Each character or a special character is represented by some
@@ -253,7 +270,7 @@
                         </div>
                         <div>
 
-                            <p>
+                            <p class="con-description">
                                 There is Total 256 Ascii code in c language
                                 Some of the important ASCII code given below<br>
                                 A to Z = 65 to 90<br>
@@ -270,14 +287,14 @@
                             Format Specifier in c language
                         </p>
                         <p class="con-description mt-3 mt-md-3">
-                        <div>
+                        <div class="con-description">
                             The Format Specifier is a string used in the formatted input and output functions.
                             The format string determines the format of the input and output. The format
                             string always starts with a '%' character
                         </div>
                         <br>
-                        <div class="px-md-5 px-0">
-                            <table class="table modify-table">
+                        <div class="px-md-2 px-0">
+                            <table class=" con-description table modify-table">
                                 <thead>
                                     <tr>
 

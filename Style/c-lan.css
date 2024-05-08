@@ -1,10 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;800;900&family=Source+Serif+Pro:wght@200;300;400;600;700;900&family=Spline+Sans+Mono:wght@300;400&display=swap");
 @media only screen and (max-width: 600px) {
   .c-subtitle {
     font-size: 2px; /* Adjust this value as needed */
   }
-  .content-container {
-    padding: 12px;
-  }
+  
   /* .con-description {
     font-size: 9px;
   font-weight: 500;

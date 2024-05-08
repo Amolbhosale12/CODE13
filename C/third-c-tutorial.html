@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE13 | 🌱</title>
+    <link rel="icon" type="image/x-icon" href="./CODE13.png">
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/index.css">
+    <link rel="stylesheet" href="../Style/c-lan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="light">
+    <div>
+        <header class="row g-0 header-container ">
+            <div class="row g-0 py-1 py-md-0 justify-content-center px-2 px-md-0 nav-bar-container">
+                <div class="row g-0 col-11 col-md-11 justify-content-center align-items-center nav-bar">
+                    <div class="col-7 col-md-2 logo">
+                        <label for="logo-name" class="logo-name pointer-cursor">CODE<span
+                                class="logo-part">13</span></label>
+                    </div>
+                    <div class="row g-0 col-md-9 d-none d-md-block lang-list font-sans">
+                        <a href="../C/c-lan.html">C</a>
+                        <a href="../C++/cplus-lan.html">C++</a>
+                        <a href="../Java/java-lan.html">JAVA</a>
+                        <a href="../Mysql/mysql-lan.html">MYSQL</a>
+                        <a href="../HTML/html-lan.html">HTML</a>
+                        <a href="../CSS/css-lan.html">CSS</a>
+                        <a href="../Javascript/script-lan.html">JAVASCRIPT</a>
+                        <a href="../React/react-lan.html">REACT</a>
+                        <a href="../Linux/linux-lan.html">LINUX</a>
+                    </div>
+
+                    <div class="row g-0 col-3 col-md-1 justify-content-center screen-mode">
+                        <div class="">
+
+                        </div>
+                    </div>
+                    <div class="d-flex d-md-none col-2  justify-content-end">
+                        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0 justify-content-center d-md-none d-none  " id="menu-list-links">
+                <ul class="col-10">
+                    <li><a href="../C/c-lan.html">C</a></li>
+                    <li><a href="../C++/cplus-lan.html">C++</a></li>
+                    <li><a href="../Java/java-lan.html">JAVA</a></li>
+                    <li><a href="../Mysql/mysql-lan.html">MYSQL</a></li>
+                    <li><a href="../HTML/html-lan.html">HTML</a></li>
+                    <li><a href="../CSS/css-lan.html">CSS</a></li>
+                    <li><a href="../Javascript/script-lan.html">JAVASCRIPT</a></li>
+                    <li><a href="../React/react-lan.html">REACT</a></li>
+                    <li><a href="../Linux/linux-lan.html">LINUX</a></li>
+
+                </ul>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="row g-0 justify-content-center py-5 py-md-5">
+                <div class="row  g-0 col-10 col-md-8  py-5 py-md-4 con-container px-2 px-md-3">
+                    <div class="py-4 py-md-3 " id="static-dynamic-section">
+                        <div class="con-title">Static and Dynamic Memory Allocation</div>
+                        <p class="con-description mt-3 mt-md-3">
+                            1.<span class="text-underline-bg">Static Memory Allocation</span>:<br>
+                            • Static memory allocation refers to allocating memory for variables at compile time.<br>
+                            • Variables with static storage duration are allocated memory when the program starts.<br>
+                            • The static keyword is used to declare static variables.
+                        </p>
+                        <p class="con-description">
+                            1.<span class="text-underline-bg">Dynamic Memory Allocation</span>:<br>
+                            • Dynamic memory allocation allows the program to request memory from the heap during
+                            runtime, and the size of the memory block can vary.<br>
+                            • Memory is allocated using functions like malloc(), calloc(), or realloc(), and deallocated
+                            using free() when it's no longer needed.<br>
+                            • Dynamic memory allocation provides flexibility, especially when the size of data
+                            structures
+                            is not known at compile time.
+                        </p>
+
+                    </div>
+                    <div class="py-4 py-md-3 " id="functions-section">
+                        <div class="con-title">Names of dynamic memory allocation function</div>
+                        <p class="con-description mt-3 mt-md-3">
+                            In C language, <span class="content-sub-title">malloc()</span>, <span
+                                class="content-sub-title">calloc()</span>, <span
+                                class="content-sub-title">realloc()</span> and <span
+                                class="content-sub-title">free()</span> are functions used for dynamic memory
+                            allocation<br>
+                            1.<span class="text-underline-bg">malloc() </span>:<br>
+                            • malloc() stands for "memory allocation."<br>
+                            • It is used to dynamically allocate a block of memory of a specified size.<br>
+                            • It takes the size of the memory block in bytes as an argument and returns a pointer to the
+                            allocated memory.<br>
+                            • The memory allocated by malloc() is uninitialized, meaning its contents are undefined.<br>
+                            • If malloc() cannot allocate the requested memory, it returns NULL.<br>
+
+                        </p>
+                        <p class="con-description">
+                            1.<span class="text-underline-bg">calloc()</span>:<br>
+                            • calloc() stands for "contiguous allocation."<br>
+                            • It is used to dynamically allocate a block of memory for an array of elements,
+                            initializing
+                            all bytes to zero.<br>
+                            • It takes two arguments: the number of elements (num) and the size of each element (size)
+                            in
+                            bytes.<br>
+                            • It returns a pointer to the allocated memory block.<br>
+                            • Unlike malloc(), calloc() initializes the allocated memory to zero.<br>
+                            • If calloc() cannot allocate the requested memory, it returns NULL.
+                        </p>
+                        <p class="con-description">
+                            1.<span class="text-underline-bg">realloc()</span>:<br>
+                            • realloc() is used to resize a previously allocated block of memory.<br>
+                            • It can be used to increase or decrease the size of the memory block.<br>
+                            • It takes two arguments: a pointer to the previously allocated memory block (ptr) and the
+                            new
+                            size of the memory block (size) in bytes.<br>
+                            • If the resizing operation is successful, realloc() returns a pointer to the resized memory
+                            block. If not, it returns NULL.<br>
+                            • If ptr is NULL, realloc() behaves like malloc(size).<br>
+                            • If size is zero, realloc() behaves like free(ptr) (i.e., deallocates the memory block).
+                        </p>
+                        <p class="con-description">
+                            1.<span class="text-underline-bg">free()</span>:<br>
+                            • The free() function in C language is used to deallocate memory previously allocated by
+                            malloc(), calloc(), or realloc(). It is crucial for preventing memory leaks and efficiently
+                            managing dynamic memory.<br>
+                            • free() doesn't return any value
+                        </p>
+
+                    </div>
+                    <div class="py-4 py-md-3 " id="layout-section">
+                        <div class="con-title">Memory layout of c program</div>
+                        <p class="con-description mt-3 mt-md-3">
+                            The memory layout of a C program typically consists of four main segments:<br>
+                            1.<span class="text-underline-bg">Code Segment</span>:<br>
+                            • The text or code segment contains the executable code of the program.<br>
+                            • It is typically read-only and stores the compiled machine instructions.<br>
+                            • The processor fetches instructions from this segment for execution.
+                        </p>
+                        <p class="con-description mt-3 mt-md-3">
+                            1.<span class="text-underline-bg">Data Segment</span>:<br>
+                            • The data segment contains initialized global and static variables.<br>
+                            • Global variables are variables declared outside of any function, and static variables are
+                            declared with the static keyword.<br>
+                            • The memory for these variables is allocated at compile time and persists throughout the
+                            program's execution.
+                        </p>
+                        <p class="con-description mt-3 mt-md-3">
+                            1.<span class="text-underline-bg">Heap</span>:<br>
+                            • The heap is the area of memory used for dynamic memory allocation.<br>
+                            • Memory allocated using functions like malloc(), calloc(), or realloc() resides in the
+                            heap.<br>
+                            • The size and lifetime of memory allocated in the heap can vary during the program's
+                            execution.<br>
+                            • Proper management of the heap, including allocation and deallocation, is the
+                            responsibility
+                            of the programmer.
+                        </p>
+                        <p class="con-description mt-3 mt-md-3">
+                            1.<span class="text-underline-bg">Stack</span>:<br>
+                            • The stack is used for storing local variables, function parameters, return addresses, and
+                            other function-related information.<br>
+                            • Each time a function is called, a new stack frame is created, containing the function's
+                            variables and information.<br>
+                            • The stack follows a Last-In-First-Out structure, meaning the most recently pushed
+                            items are popped first.<br>
+                            • Stack memory is automatically managed by the program's runtime system.
+                            It's important to note that the stack size is usually limited, and exceeding this limit can
+                            lead to a stack overflow.
+                        </p>
+                    </div>
+
+                    <div class="row g-0 ">
+                        <div class="col-12 d-flex justify-content-between ">
+                            <button class="prev-btn" id="prev-btn">Prev</button>
+                            <!-- <a href="#"><button class="next-btn" id="next-btn">Next</button></a> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="row g-0 footer-container justify-content-center">
+            <div class="footer col-11 col-md-6 text-center">
+                <label for="" class="footer">© 2024 All Rights Reserved. CODE<span class="sub-title">13</span></label>
+            </div>
+        </footer>
+
+    </div>
+    <div>
+
+    </div>
+
+</body>
+
+<script src="../Script/script.js"></script>
+<script>
+    $(document).ready(
+        () => {
+
+        }
+    );
+</script>
+
+</html>
