@@ -3,17 +3,16 @@
   .c-subtitle {
     font-size: 2px; /* Adjust this value as needed */
   }
-  
+
   /* .con-description {
     font-size: 9px;
   font-weight: 500;
   } */
-  .copy-code-container{
+  .copy-code-container {
     display: flex;
     justify-content: center;
     text-align: center;
   }
-
 }
 .c-subtitle {
   font-size: var(--font-sub-title);
@@ -39,5 +38,3 @@
   background-color: var(--con-description-bg);
   border-radius: 15px;
 }
-
-

@@ -4,15 +4,19 @@ menuList.classList.add("d-none");
 menuIcon.addEventListener("click", () => {
   // alert("button clicked");
   menuIcon.classList.toggle("fa-x");
-  menuList.classList.toggle("d-none");   
+  menuList.classList.toggle("d-none");
 });
 
-
+const lightdark_btn=document.getElementById("checkbox");
+lightdark_btn.addEventListener("click",()=>{
+  const mainBody=document.body;
+  mainBody.classList.toggle("dark");
+});
 
 const prev_btn = document.getElementById("prev-btn");
 prev_btn.addEventListener("click", () => {
   window.history.back();
-});
+}); 
 
 const copy_btn = document.getElementById("copy-btn");
 copy_btn.addEventListener("click", function copyText() {
@@ -49,7 +53,4 @@ copy_btn1.addEventListener("click", function copyText() {
       console.error("Could not copy text: ", err);
     });
 });
-
-
-
 
