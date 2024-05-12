@@ -13,24 +13,30 @@
   --copy-code-bg: hsl(220deg 17% 19%);
   --menu-list-color: #1f2222;
   --menu-icon-bg-color: #1f2222;
+  --content-container-text-color:black;
+  --content-text-color:black;
+  --text-backgroun-color:black;
 }
 .dark {
   --header-text-color: #f6f8f8;
-  --header-bg: #313131;
+  --header-bg: hsl(220deg 17% 19%);
   --font-sub-title: 10px;
   --subtitle-color: #f6f8f8;
   --subtitle-bg: #1f2222;
-  --content-bg: #3b3b3b;
-  --content-container-bg: #f6f8f8;
+  --content-bg: hsl(220deg 17% 19%);
+  --content-container-bg: #151616;
+  --content-container-text-color:white;
   --header-border-color: #4b4a4a;
   --footer-border-color: #4b4a4a;
   --footer-bg: #313131;
   --footer-text-color: #f6f8f8;
-  --con-description-bg: #4b4a4a;
+  --con-description-bg:hsl(220deg 17% 19%);
   --copy-code-bg: #2c2a2a;
-  --copy-code-bg: white;
+  --copy-code-bg: hsl(220deg 17% 19%);
   --menu-list-color: #e8f3f3;
   --menu-icon-bg-color: #f6f8f8;
+  --content-text-color:white;
+  --text-backgroun-color:black;
 }
 .pointer-cursor {
   cursor: pointer;
@@ -83,6 +89,7 @@
 .card-container {
   background-color: var(--content-container-bg);
   border-radius: 10px;
+  color: var(--content-container-text-color);
 }
 .sub-part {
   color: #053ef7;
@@ -93,6 +100,7 @@
   padding: 0px 5px;
   border-radius: 5px;
   font-weight: 500;
+  color: var(--text-backgroun-color);
 }
 .prev-btn,
 .next-btn {
@@ -118,6 +126,7 @@
 .con-description {
   font-size: 15px;
   font-weight: 400;
+  color: var(--content-text-color);
 }
 .con-title {
   border-left: 4px solid #d1d5d6;
@@ -198,9 +207,9 @@ img {
 .nav-bar {
   padding: 8px;
 }
-/* #menu-icon {
-  background-color: var(--menu-icon-bg-color);
-} */
+#menu-icon {
+  color: var(--menu-icon-bg-color);
+}
 .content-container {
   padding: 12px;
 }
