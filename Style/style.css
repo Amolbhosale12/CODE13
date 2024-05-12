@@ -1,17 +1,14 @@
 .light {
   --header-text-color: #1f2222;
-  /* --header-bg: #f6f8f8; */
   --font-sub-title: 10px;
   --subtitle-color: #3d413e;
-  /* --content-bg: #f6f8f8; */
-  --content-bg: #f1f8fa;
+  --content-bg: white;
   --footer-text-color: #1f2222;
   --footer-bg: #f6f8f8;
   --content-container-bg: #f6f8f8;
   --header-border-color: #e5ebeb;
   --footer-border-color: #e5ebeb;
   --header-bg: #f6f8f8;
-  /* --con-description-bg:#e7f3f3; */
   --con-description-bg: #fafafa;
   --copy-code-bg: hsl(220deg 17% 19%);
   --menu-list-color: #1f2222;
@@ -147,7 +144,7 @@
 .code-title {
   font-size: 17px;
 }
-.copy-btn {
+.copy-btn ,.copy-button {
   outline: none;
   border-radius: 7px;
   background-color: var(--copy-code-bg);
@@ -176,6 +173,10 @@ img {
 } */
 .code-color-v {
   color: #f5df64;
+}
+.code-color-o{
+  color: #f88e15;
+
 }
 #menu-list-links ul li {
   list-style: none;
@@ -240,4 +241,7 @@ img {
 
 .fa-sun {
   color: #f1c40f;
+}
+.while-loop-con   {
+  color: white;
 }

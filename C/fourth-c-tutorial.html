@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE13 | 🌱</title>
+    <link rel="icon" type="image/x-icon" href="./CODE13.png">
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/index.css">
+    <link rel="stylesheet" href="../Style/c-lan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="light">
+    <div>
+        <header class="row g-0 header-container ">
+            <div class="row g-0 py-1 py-md-0 justify-content-center px-2 px-md-0 nav-bar-container">
+                <div class="row g-0 col-11 col-md-11 justify-content-center align-items-center nav-bar">
+                    <div class="col-7 col-md-2 logo">
+                        <label for="logo-name" class="logo-name pointer-cursor">CODE<span
+                                class="logo-part">13</span></label>
+                    </div>
+                    <div class="row g-0 col-md-9 d-none d-md-block lang-list font-sans">
+                        <a href="../C/c-lan.html">C</a>
+                        <a href="../C++/cplus-lan.html">C++</a>
+                        <a href="../Java/java-lan.html">JAVA</a>
+                        <a href="../Mysql/mysql-lan.html">MYSQL</a>
+                        <a href="../HTML/html-lan.html">HTML</a>
+                        <a href="../CSS/css-lan.html">CSS</a>
+                        <a href="../Javascript/script-lan.html">JAVASCRIPT</a>
+                        <a href="../React/react-lan.html">REACT</a>
+                        <a href="../Linux/linux-lan.html">LINUX</a>
+                    </div>
+
+                    <div class="row g-0 col-3 col-md-1 justify-content-center screen-mode">
+                        <div class="col-5 col-md-12" id="lightdark-btn">
+                            <input type="checkbox" class="checkbox" id="checkbox" />
+                            <label for="checkbox" class="checkbox-label">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                                <span class="ball"></span>
+                            </label>
+                            <!-- <button class="btn btn-primary light-dark-mode" id="light-dark-mode">mode</button> -->
+                        </div>
+                    </div>
+                    <div class="d-flex d-md-none col-2  justify-content-end">
+                        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0 justify-content-center d-md-none d-none  " id="menu-list-links">
+                <ul class="col-10">
+                    <li><a href="../C/c-lan.html">C</a></li>
+                    <li><a href="../C++/cplus-lan.html">C++</a></li>
+                    <li><a href="../Java/java-lan.html">JAVA</a></li>
+                    <li><a href="../Mysql/mysql-lan.html">MYSQL</a></li>
+                    <li><a href="../HTML/html-lan.html">HTML</a></li>
+                    <li><a href="../CSS/css-lan.html">CSS</a></li>
+                    <li><a href="../Javascript/script-lan.html">JAVASCRIPT</a></li>
+                    <li><a href="../React/react-lan.html">REACT</a></li>
+                    <li><a href="../Linux/linux-lan.html">LINUX</a></li>
+
+                </ul>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="row g-0 justify-content-center py-5 py-md-5">
+                <div class="row  g-0 col-10 col-md-8  py-5 py-md-4 con-container px-2 px-md-3">
+                    <div class="py-4 py-md-3 " id="static-dynamic-section">
+                        <div class="con-title">Looping in C language </div>
+                        <p class="con-description mt-3 mt-md-3">
+                            Looping in C language is like setting up a repetitive task. You tell the computer to do
+                            something over and over again until a condition is met or until you say stop. It's like
+                            telling someone to count from 1 to 10, but instead of saying each number individually, you
+                            just tell them to "keep counting until you reach 10". That's what loops do in
+                            programming—they automate repetitive tasks by repeating a block of code until a condition is
+                            satisfied.<br>
+                            <span class="content-sub-title">There are three types of loops in C as follow:</span>
+                        </p>
+                        <p class="con-description">
+                            1.<span class="text-underline-bg">For Loop</span>:<br>
+                            The for loop repeatedly executes a block of code until a specified condition evaluates to
+                            false.<br> <span class="content-sub-title">Its syntax is as follows</span>:
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        <span class="code-color-c">
+
+                                            /*<br>
+                                            for (initialization; condition; increment/decrement) {<br>
+                                            code to be executed<br>
+                                            }<br>
+                                            */<br>
+                                        </span>
+
+                                        #<span class="code-color-m">include</span> &lt;stdio.h&gt;<br>
+                                        <span class="code-color-k">int</span> main() {<br>
+                                        <span class="code-color-m">for</span> (<span class="code-color-k">int</span> i =
+                                        <span class="code-color-k">0</span>; i < <span class="code-color-k">5</span>;
+                                            i++) { <br>
+                                            <span class="code-color-o">printf</span>(<span class="code-color-c">"Value
+                                                of
+                                                i: %d\n"</span>, i);
+                                            <br> }<br>
+                                            return <span class="code-color-k">0</span>; <br>
+                                            }
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+                        <p class="con-description">
+                            2.<span class="text-underline-bg">While Loop</span>:<br>
+                            The while loop executes a block of code as long as a specified condition is true.<br>
+                            <span class="content-sub-title">Its syntax is as follows</span>:
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        <span class="code-color-c">/*
+                                            <br>
+                                            while (condition) {<br>
+                                            code to be executed<br>
+                                            update condition<br>
+                                            }<br>
+                                            */<br>
+
+                                        </span>
+                                        #<span class="code-color-m">include</span> &lt;stdio.h&gt;<br>
+                                        <span class="code-color-k">int</span> main() {<br>
+                                        <span class="code-color-k">int</span> i = <span
+                                            class="code-color-k">0</span>;<br>
+                                        <span class="code-color-m">while</span> (i < <span class="code-color-k">
+                                            5</span>) { <br>
+                                            <span class="code-color-o">printf</span>(<span class="code-color-c">"Value
+                                                of i: %d\n"</span>,
+                                            i);<br> i++;<br> }<br>
+                                            return <span class="code-color-k">0</span>; <br>
+                                            }
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+                        <p class="con-description">
+                            3.<span class="text-underline-bg">Do While Loop</span>:<br>
+                            The do-while loop is similar to the while loop, but it executes the block of code at
+                            least
+                            once before checking the condition.<br> <span class="content-sub-title">Its syntax is as
+                                follows</span>:
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        <span class="code-color-c">
+                                            /*<br>
+                                            do {<br>
+                                            code to be executed<br>
+                                            update condition<br>
+                                            } while (condition);<br>*/
+
+                                        </span>
+                                        <br>
+
+                                        #<span class="code-color-m">include</span> &lt;stdio.h&gt;<br>
+                                        <span class="code-color-k">int</span> main() {<br>
+                                        <span class="code-color-k">int</span> i = <span
+                                            class="code-color-k">0</span>;<br>
+                                        <span class="code-color-m">do</span> {<br>
+                                        <span class="code-color-o">
+                                            printf
+                                        </span>(<span class="code-color-c">"Value of i: %d\n"</span>, i);<br>
+                                        i++;<br>
+                                        } <span class="code-color-m">while</span> (i < <span class="code-color-k">
+                                            5</span>);<br>
+                                            return <span class="code-color-k">0</span>; <br>
+                                            }
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="py-4 py-md-3 " id="layout-section">
+                        <div class="con-title">Conditional statement in c language</div>
+                        <p class="con-description mt-3 mt-md-3">
+                            Conditional statements in C language allow you to make decisions in your code based on
+                            certain conditions. They let your program choose between different paths of execution
+                            depending on whether a condition is true or false.<br>
+                            <span class="content-sub-title">There are mainly four types of conditional statements in
+                                C</span>:
+                        </p>
+                        <p class="con-description">
+                            1.<span class="text-underline-bg">if statement</span>: The if statement executes a block of
+                            code if a specified condition is true.<br> <span class="content-sub-title">Its syntax
+                                is</span>:
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        <span class="code-color-c">
+                                            /*<br>
+
+                                            if (condition) {<br>
+                                            code to be executed if condition is true<br>
+                                            }<br>
+                                            */<br>
+
+                                        </span>
+
+                                        #<span class="code-color-m">include</span> &lt;stdio.h&gt;<br>
+                                        <span class="code-color-k">int</span> main() {<br>
+                                        <span class="code-color-k">int</span> x = <span
+                                            class="code-color-k">10</span>;<br>
+                                        <span class="code-color-m">if</span> (x > <span class="code-color-k">5</span>)
+                                        {<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"x is
+                                            greater than 5\n"</span>);<br>
+                                        }<br>
+                                        return <span class="code-color-k">0</span>; <br>
+                                        }
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+                        <p class="con-description">
+                            2.<span class="text-underline-bg">if-else statement</span>: The if-else statement executes
+                            one block of code if the condition is true, and another block if the condition is false.<br>
+                            <span class="content-sub-title">Its syntax
+                                is</span>:
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        <span class="code-color-c">
+                                            /*<br>
+                                            if (condition) {<br>
+                                            code to be executed if condition is true<br>
+                                            } else {<br>
+                                            code to be executed if condition is false<br>
+                                            }<br>*/<br>
+                                        </span>
+
+                                        #<span class="code-color-m">include</span> &lt;stdio.h&gt;<br>
+                                        <span class="code-color-k">int</span> main() {<br>
+
+                                        <span class="code-color-k">int</span> x = <span
+                                            class="code-color-k">3</span>;<br>
+                                        <span class="code-color-m">if </span>(x % <span class="code-color-k">2</span> ==
+                                        <span class="code-color-k">0</span>) {<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"x is
+                                            even\n"</span>);<br>
+                                        } <span class="code-color-m">else </span> {<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"x is
+                                            odd\n"</span>);<br>
+                                        }<br>
+
+                                        return <span class="code-color-k">0</span>; <br>
+                                        }
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+                        <p class="con-description">
+                            3.<span class="text-underline-bg"> Nested if statements</span>: Nested if statements in C
+                            allow you to have one if or if-else statement inside another if or if-else block. This
+                            allows for more complex decision-making scenarios where you need to check multiple
+                            conditions.<br> <span class="content-sub-title">Here's an example</span>:
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+
+
+                                        #<span class="code-color-m">include</span> &lt;stdio.h&gt;<br>
+                                        <span class="code-color-k">int</span> main() {<br>
+                                        <span class="code-color-k">int</span> x = <span
+                                            class="code-color-k">10</span>;<br>
+                                        <span class="code-color-k">int</span> y = <span
+                                            class="code-color-k">5</span>;<br>
+
+                                        <span class="code-color-m">if </span> (x > <span class="code-color-k">5</span>)
+                                        {<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"x is
+                                            greater than 5\n"</span>);<br>
+
+                                        <span class="code-color-m">if </span> (y > <span class="code-color-k">2</span>)
+                                        {<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"y is
+                                            greater than 2\n"</span>);<br>
+                                        } <span class="code-color-m">else </span> {<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"y is not
+                                            greater than 2\n"</span>);<br>
+                                        }<br>
+                                        } <span class="code-color-m">else</span> {<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"x is not
+                                            greater than 5\n"</span>);<br>
+                                        }<br>
+
+                                        return <span class="code-color-k">0</span>; <br>
+                                        }
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+                        <p class="con-description">
+                            4.<span class="text-underline-bg">if-else ladder</span>: The "if-else ladder" is an
+                            extension of the "if-else" construct in programming languages like C, C++, Java, and others.
+                            It allows you to test multiple conditions sequentially until one of them evaluates to
+                            true.<br>
+                            <span class="content-sub-title">Here's the basic syntax</span>:
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        <span class="code-color-c">
+                                            /*<br>
+                                            if (condition1) {<br>
+                                            code to execute if condition1 is true<< /rb>
+                                                } else if (condition2) {<br>
+                                                code to execute if condition1 is false and condition2 is true<br>
+                                                } else if (condition3) {<br>
+                                                code to execute if condition1 and condition2 are false and condition3 is
+                                                true<br>
+                                                } else {<br>
+                                                code to execute if all conditions are false<br>
+                                                }
+                                                */
+                                        </span>
+                                        <br>
+                                        <br>
+                                        #<span class="code-color-m">include</span> &lt;stdio.h&gt;<br>
+                                        <span class="code-color-k">int</span> main() {<br>
+                                        <span class="code-color-k">int</span> num = <span
+                                            class="code-color-k">15</span>;<br>
+
+                                        if (num > <span class="code-color-k">0</span> && num <= <span
+                                            class="code-color-k">10</span>) {<br>
+                                            <span class="code-color-o">printf</span>(<span class="code-color-c">"Number
+                                                is between 1 and 10\n"</span>);<br>
+                                            } <br>
+                                            <span class="code-color-m">else if </span> (num> <span
+                                                class="code-color-k">10</span> && num <= <span class="code-color-k">
+                                                20</span>) {<br>
+                                                <span class="code-color-o">printf</span>(<span
+                                                    class="code-color-c">"Number is between 11 and 20\n"</span>);<br>
+                                                }<br>
+                                                <span class="code-color-m">else if </span> (num> <span
+                                                    class="code-color-k">20</span> && num <= <span class="code-color-k">
+                                                    30</span>) {<br>
+                                                    <span class="code-color-o">printf</span>(<span
+                                                        class="code-color-c">"Number is between 21 and
+                                                        30\n"</span>);<br>
+                                                    } <br>
+                                                    <span class="code-color-m">else </span> { <br>
+                                                    <span class="code-color-o">printf</span>(<span
+                                                        class="code-color-c">"Number is greater than 30 or less than or
+                                                        equal to 0\n"</span>);<br>
+                                                    } <br>
+                                                    return <span class="code-color-k">0</span>; <br>
+                                                    }
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+
+                    </div>
+
+                    <div class="row g-0 ">
+                        <div class="col-12 d-flex justify-content-between ">
+                            <button class="prev-btn" id="prev-btn">Prev</button>
+                            <a href="./fifth-c-tutorial.html"><button class="next-btn" id="next-btn">Next</button></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="row g-0 footer-container justify-content-center">
+            <div class="footer col-11 col-md-6 text-center">
+                <label for="" class="footer">© 2024 All Rights Reserved. CODE<span class="sub-title">13</span></label>
+            </div>
+        </footer>
+
+    </div>
+    <div>
+
+    </div>
+
+</body>
+
+<script src="../Script/script.js"></script>
+<script>
+
+
+</script>
+
+</html>

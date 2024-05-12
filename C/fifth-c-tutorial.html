@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE13 | 🌱</title>
+    <link rel="icon" type="image/x-icon" href="./CODE13.png">
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/index.css">
+    <link rel="stylesheet" href="../Style/c-lan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="light">
+    <div>
+        <header class="row g-0 header-container ">
+            <div class="row g-0 py-1 py-md-0 justify-content-center px-2 px-md-0 nav-bar-container">
+                <div class="row g-0 col-11 col-md-11 justify-content-center align-items-center nav-bar">
+                    <div class="col-7 col-md-2 logo">
+                        <label for="logo-name" class="logo-name pointer-cursor">CODE<span
+                                class="logo-part">13</span></label>
+                    </div>
+                    <div class="row g-0 col-md-9 d-none d-md-block lang-list font-sans">
+                        <a href="../C/c-lan.html">C</a>
+                        <a href="../C++/cplus-lan.html">C++</a>
+                        <a href="../Java/java-lan.html">JAVA</a>
+                        <a href="../Mysql/mysql-lan.html">MYSQL</a>
+                        <a href="../HTML/html-lan.html">HTML</a>
+                        <a href="../CSS/css-lan.html">CSS</a>
+                        <a href="../Javascript/script-lan.html">JAVASCRIPT</a>
+                        <a href="../React/react-lan.html">REACT</a>
+                        <a href="../Linux/linux-lan.html">LINUX</a>
+                    </div>
+
+                    <div class="row g-0 col-3 col-md-1 justify-content-center screen-mode">
+                        <div class="col-5 col-md-12" id="lightdark-btn">
+                            <input type="checkbox" class="checkbox" id="checkbox" />
+                            <label for="checkbox" class="checkbox-label">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                                <span class="ball"></span>
+                            </label>
+                            <!-- <button class="btn btn-primary light-dark-mode" id="light-dark-mode">mode</button> -->
+                        </div>
+                    </div>
+                    <div class="d-flex d-md-none col-2  justify-content-end">
+                        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0 justify-content-center d-md-none d-none  " id="menu-list-links">
+                <ul class="col-10">
+                    <li><a href="../C/c-lan.html">C</a></li>
+                    <li><a href="../C++/cplus-lan.html">C++</a></li>
+                    <li><a href="../Java/java-lan.html">JAVA</a></li>
+                    <li><a href="../Mysql/mysql-lan.html">MYSQL</a></li>
+                    <li><a href="../HTML/html-lan.html">HTML</a></li>
+                    <li><a href="../CSS/css-lan.html">CSS</a></li>
+                    <li><a href="../Javascript/script-lan.html">JAVASCRIPT</a></li>
+                    <li><a href="../React/react-lan.html">REACT</a></li>
+                    <li><a href="../Linux/linux-lan.html">LINUX</a></li>
+
+                </ul>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="row g-0 justify-content-center py-5 py-md-5">
+                <div class="row  g-0 col-10 col-md-8  py-5 py-md-4 con-container px-2 px-md-3">
+                    <div class="py-4 py-md-3 " id="static-dynamic-section">
+                        <div class="con-title">Switch statement in C</div>
+                        <p class="con-description mt-3 mt-md-3">
+                            The switch statement in C provides a way to execute different blocks of code based on the
+                            value of a variable. It's particularly useful when you have multiple conditions to check
+                            against a single variable.<br> <span class="content-sub-title">Here's how it
+                                works</span>:<br>
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        #<span class="code-color-m">include</span> <span
+                                            class="code-color-c">&lt;stdio.h&gt;</span> <br>
+
+                                        <span class="code-color-k">int</span> <span class="code-color-m">main</span>()
+                                        {<br>
+                                        <span class="code-color-k">int</span> choice;<br>
+
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Enter a
+                                            number between 1 and 3:"</span>);<br>
+                                        <span class="code-color-o">scanf</span>(<span class="code-color-c">"%d"</span>,
+                                        &choice);<br>
+
+                                        <span class="code-color-m">switch</span> (choice) {<br>
+                                        <span class="code-color-m">case</span> <span class="code-color-k">1</span>:<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"You entered
+                                            1\n"</span>);<br>
+                                        <span class="code-color-m">break</span>;<br>
+                                        <span class="code-color-m">case</span> <span class="code-color-k">2</span>:<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"You entered
+                                            2\n"</span>);<br>
+                                        <span class="code-color-m">break</span>;<br>
+                                        <span class="code-color-m">case</span> <span class="code-color-k">3</span>:<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"You entered
+                                            3\n"</span>);<br>
+                                        <span class="code-color-m">break</span>;<br>
+                                        <span class="code-color-m">default</span>:<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Invalid
+                                            choice\n"</span>);<br>
+                                        }<br>
+
+                                        <span class="code-color-m">return</span> <span
+                                            class="code-color-k">0</span>;<br>
+                                        }
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+                        <p class="con-description">
+                            Each case label must be a constant expression.<br>
+                            • The <span class="content-sub-title">break</span> statement is used to exit the switch
+                            block as well as you can use with loops to exit.<br>
+                            • The <span class="content-sub-title">default</span> case is optional and is executed if
+                            none of the case values match the value of
+                            the variable being switched.
+                        </p>
+                    </div>
+                    <div class="py-4 py-md-3 " id="layout-section">
+                        <div class="con-title">Recursion in C language</div>
+                        <p class="con-description mt-3 mt-md-3">
+                            Recursion in C language is a programming technique where a function calls itself directly or
+                            indirectly to solve a problem. It's similar to a loop but achieved through function calls.
+                            Here's a basic example of a recursive function to calculate the factorial of a number.
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        #<span class="code-color-m">include</span> <span
+                                            class="code-color-c">&lt;stdio.h&gt;</span><br>
+
+                                        <span class="code-color-c">// Recursive function to calculate
+                                            factorial<br></span>
+                                        <span class="code-color-k">int</span> factorial(<span
+                                            class="code-color-k">int</span> n) {<br>
+                                        <span class="code-color-m">if</span>(n == <span class="code-color-k">0</span> ||
+                                        n == <span class="code-color-k">1</span>) {<br>
+                                        <span class="code-color-m">return</span> <span
+                                            class="code-color-k">1</span>;<br>
+                                        } <span class="code-color-m">else</span> {<br>
+                                        <span class="code-color-m">return</span> n * factorial(n - <span
+                                            class="code-color-k">1</span>);<br>
+                                        }<br>
+                                        }<br>
+
+                                        <span class="code-color-k">int</span> <span class="code-color-m">main</span>()
+                                        {<br>
+                                        <span class="code-color-k">int</span> num = <span
+                                            class="code-color-k">5</span>;<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Factorial
+                                            of %d is %d\n"</span>, num, factorial(num));<br>
+                                        <span class="code-color-m">return</span> <span
+                                            class="code-color-k">0</span>;<br>
+                                        }
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        </p>
+                        <p class="con-description mt-3 mt-md-3">
+                            Recursion can be a powerful and elegant solution for certain problems, but it's important to
+                            handle it carefully to avoid infinite recursion (calling the function infinitely) and
+                            excessive memory usage. Also, it may not always be the most efficient solution, especially
+                            for problems where iteration can be simpler and more efficient.
+                        </p>
+
+                    </div>
+                    <div class="py-4 py-md-3 " id="layout-section">
+                        <div class="con-title">Array in c language</div>
+                        <p class="con-description mt-3 mt-md-3">
+                            Arrays in C language are data structures that allow you to store multiple values of the same
+                            data type under one variable name. Each value in the array is accessed using an index, which
+                            starts from 0 and goes up to one less than the size of the array. Here's a basic example of
+                            how arrays are declared and used in C:
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        #<span class="code-color-m">include</span> <span
+                                            class="code-color-c">&lt;stdio.h&gt;</span><br>
+                                        <span class="code-color-k">int</span> <span class="code-color-m">main</span>()
+                                        {<br>
+                                        <span class="code-color-c">// Declaring an array of integers with 5
+                                            elements</span><br>
+                                        <span class="code-color-k">int</span> numbers[<span
+                                            class="code-color-k">5</span>];<br>
+
+                                        <span class="code-color-c">// Assigning values to elements of the array</span>
+                                        <br>
+                                        numbers[<span class="code-color-k">0</span>] = <span
+                                            class="code-color-k">10</span>;<br>
+                                        numbers[<span class="code-color-k">1</span>] = <span
+                                            class="code-color-k">20</span>;<br>
+                                        numbers[<span class="code-color-k">2</span>] = <span
+                                            class="code-color-k">30</span>;<br>
+                                        numbers[<span class="code-color-k">3</span>] = <span
+                                            class="code-color-k">40</span>;<br>
+                                        numbers[<span class="code-color-k">4</span>] = <span
+                                            class="code-color-k">50</span>;<br>
+
+                                        <span class="code-color-c">// Accessing and printing elements of the
+                                            array</span><br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Element 0:
+                                            %d\n"</span>, numbers[<span class="code-color-k">0</span>]);<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Element 1:
+                                            %d\n"</span>, numbers[<span class="code-color-k">1</span>]);<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Element 2:
+                                            %d\n"</span>, numbers[<span class="code-color-k">2</span>]);<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Element 3:
+                                            %d\n"</span>, numbers[<span class="code-color-k">3</span>]);<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Element 4:
+                                            %d\n"</span>, numbers[<span class="code-color-k">4</span>]);<br>
+
+                                        <span class="code-color-m">return</span> <span
+                                            class="code-color-k">0</span>;<br>
+                                        }
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        </p>
+                        <p class="con-description mt-3 mt-md-3">
+                            If we think about above example numbers is a variable which holds 5 interger value at
+                            continuous memory location.
+                            as we know that index always starts from 0.if you think to store another type of data in
+                            that array you can able to do that instead of using int keyword you can use another
+                            keyword.just like you want to store decimal value then you can use float ,suppose if you
+                            want
+                            to store characters then you can use char and declare size of array.you will see what is
+                            character and how to store in variable.
+                        </p>
+
+                    </div>
+                    <div class="py-4 py-md-3 " id="layout-section">
+                        <div class="con-title">Character in C</div>
+                        <p class="con-description mt-3 mt-md-3">
+                            char is a data type used to represent a single character. Characters in C are represented
+                            using ASCII (American Standard Code for Information Interchange) or other character encoding
+                            standards. <br><span class="content-sub-title">Here's a basic overview of char in
+                                C</span>:<br>
+                            1.<span class="content-sub-title">Declaration</span>: <br>
+                            2.<span class="content-sub-title">Initialization</span>: <br>
+                            3.<span class="content-sub-title">Character Arrays (Strings)</span>: <br>
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        <span class="code-color-k">char</span> myChar;<span
+                                            class="code-color-c">//Declaration</span><br>
+                                        myChar = <span class="code-color-c">'A'</span>;<span
+                                            class="code-color-c">//Initialization</span><br>
+                                        <span class="code-color-k">char</span> str1[] = <span
+                                            class="code-color-c">"Hello"</span>;<span class="code-color-c">//
+                                            initialized at
+                                            declaration</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        </p>
+
+                        <p class="con-description mt-3 mt-md-3">
+                            In the C programming language, a character array (or string) is terminated with a null
+                            character, represented by '\0'. This null character marks the end of the string. It's
+                            essential because many standard string manipulation functions rely on the presence of this
+                            null character to determine the length of the string and to know when the string ends.<br>
+                            If you want to perform operation on character you can refer below exmaple:
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        #<span class="code-color-m">include</span> <span
+                                            class="code-color-c">&lt;stdio.h&gt;</span> <br>
+
+                                        <span class="code-color-k">int</span> <span class="code-color-m">main</span>()
+                                        {<br>
+                                        <span class="code-color-k">char</span> str[] = <span
+                                            class="code-color-c">"Hello"</span>;<br>
+
+                                        <span class="code-color-c">/* Print each character until the null character is
+                                            encountered and you can able to perform operation on that character
+                                            according to your requirement.*/</span><br>
+                                        <span class="code-color-m">for</span> (<span class="code-color-k">int</span> i =
+                                        <span class="code-color-k">0</span>; str[i] != <span
+                                            class="code-color-c">'\0'</span>; ++i) {<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"%c"</span>,
+                                        str[i]);<br>
+                                        }<br>
+
+                                        return <span class="code-color-k">0</span>;<br>
+                                        }
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        </p>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!--------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="py-4 py-md-3 " id="layout-section">
+                        <div class="con-title">Data structures</div>
+                        <p class="con-description mt-3 mt-md-3">
+                            In C, it's common to use structures (structs) or unions when you need to store different
+                            types of data within a single data structure. Here's how you can implement them:
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        #<span class="code-color-m">include</span> <span
+                                            class="code-color-c">&lt;stdio.h&gt;</span> <br>
+
+                                        <span class="code-color-c">//Define a struct to store information about a
+                                            person</span> <br>
+                                        <span class="code-color-m">struct</span> <span
+                                            class="code-color-o">Person</span>{<br>
+                                        <span class="code-color-k">char</span> name[<span
+                                            class="code-color-k">50</span>];<br>
+                                        <span class="code-color-k">int</span> age;<br>
+                                        <span class="code-color-k">float</span> height;<br>
+                                        };<br>
+
+                                        <span class="code-color-c">//Define a union to store either an integer or a
+                                            float</span> <br>
+                                        <span class="code-color-m">union</span> <span class="code-color-o">Number</span>
+                                        {<br>
+                                        <span class="code-color-k">int</span> integer;<br>
+                                        <span class="code-color-k">float</span> floating_point;<br>
+                                        };<br>
+
+                                        <span class="code-color-k">int</span> <span class="code-color-m">main</span>()
+                                        {<br>
+                                        <span class="code-color-c">//Example of using a struct</span> <br>
+                                        <span class="code-color-m">struct</span> <span
+                                            class="code-color-o">Person</span> <span
+                                            class="code-color-o">Person1</span>;<br>
+                                        <span class="code-color-o">strcpy</span>(person1.name, "John");<br>
+                                        person1.age = <span class="code-color-k">30</span>;<br>
+                                        person1.height = <span class="code-color-k">5.9</span>;<br>
+
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Person's
+                                            name: %s\n"</span>, person1.name);<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Person's
+                                            age: %d\n"</span>, person1.age);<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Person's
+                                            height: %.2f\n"</span>, person1.height);<br>
+
+                                        <span class="code-color-c">Example of using a union</span> <br>
+                                        <span class="code-color-m">union</span> <span class="code-color-o">Number</span>
+                                        <span class="code-color-o">num</span>;<br>
+                                        num.integer = 10;<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Integer
+                                            value: %d\n"</span>, num.integer);<br>
+
+                                        num.floating_point = <span class="code-color-k">3.14</span>;<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Float
+                                            value: %.2f\n"</span>, num.floating_point);<br>
+
+                                        <span class="code-color-c">/*Notice that after assigning a float value to the
+                                            union, the integer value
+                                            is overwritten*/</span> <br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Integer
+                                            value after assigning float: %d\n"</span>, num.integer);<br>
+
+                                        return <span class="code-color-k">0</span>;<br>
+                                        }<br>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+
+
+                    </div>
+                    <div class="py-4 py-md-3 " id="layout-section">
+                        <div class="con-title">Union in c language</div>
+                        <p class="con-description mt-3 mt-md-3">
+                            Unions in the C programming language allow you to store different types of data in the same
+                            memory location. Unlike structures (structs), where each member has its own memory location,
+                            in a union, all members share the same memory space. This means that a union variable can
+                            hold only one value at a time.
+
+                            Here's a basic example to illustrate unions in C:
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        #<span class="code-color-m">include</span> <span
+                                            class="code-color-c">&lt;stdio.h&gt;</span> <br>
+
+                                        <span class="code-color-c">//Define a struct to store information about a
+                                            person</span> <br>
+                                        <span class="code-color-m">struct</span> <span class="code-color-o">Person</span> {<br>
+                                        <span class="code-color-k">char</span> name[<span
+                                            class="code-color-k">50</span>];<br>
+                                        <span class="code-color-k">int</span> age;<br>
+                                        <span class="code-color-k">float</span> height;<br>
+                                        };<br>
+
+                                        <span class="code-color-c">//Define a union to store either an integer or a
+                                            float<br></span>
+                                            <span class="code-color-m">union</span> <span class="code-color-o">Number</span> {<br>
+                                        <span class="code-color-k">int</span> integer;<br>
+                                        <span class="code-color-k">float</span> floating_point;<br>
+                                        };<br>
+
+                                        <span class="code-color-k">int</span> <span class="code-color-m">main</span>()
+                                        {<br>
+                                        <span class="code-color-c">//Example of using a struct</span> <br>
+                                        <span class="code-color-m">struct</span> <span class="code-color-o">Person</span> <span class="code-color-o">person1</span>;<br>
+                                        <span class="code-color-o">strcpy</span>(person1.name, <span class="code-color-c">"John"</span>);<br>
+                                        person1.age = <span class="code-color-k">30</span>;<br>
+                                        person1.height = <span class="code-color-k">5.9</span>;<br>
+
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Person's name: %s\n"</span>,
+                                        person1.name);<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Person's age: %d\n"</span>,
+                                        person1.age);<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Person's height: %.2f\n"</span>,
+                                        person1.height);<br>
+
+                                        <span class="code-color-c">//Example of using a union</span> <br>
+                                        <span class="code-color-m">union</span> <span class="code-color-o">Number</span> num;<br>
+                                        num.integer = <span class="code-color-k">10</span>;<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Integer value: %d\n"</span>,
+                                        num.integer);<br>
+
+                                        num.floating_point = <span class="code-color-k">3.14</span>;<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Float value: %.2f\n"</span>,
+                                        num.floating_point);<br>
+
+                                        <span class="code-color-c">/* Notice that after assigning a float value to
+                                            the union, the integer value*/
+                                            is overwritten</span><br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Integer value after assigning
+                                            float: %d\n"</span>, num.integer);<br>
+
+                                        return <span class="code-color-k">0</span>;<br>
+                                        }
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        </p>
+
+
+                    </div>
+                    <div class="py-4 py-md-3 " id="layout-section">
+                        <div class="con-title">Storage Classes in C</div>
+                        <p class="con-description mt-3 mt-md-3">
+                            In C programming, storage classes determine the lifetime, scope, and visibility of variables
+                            and functions within a program. C provides four storage classes:<br>
+                        </p>
+                        <p class="con-description mt-3 mt-md-3">
+
+                            1.<span class="text-underline-bg">Automatic Storage Class (auto)</span>:
+
+                            Variables declared within a function without any storage class specifier default to
+                            automatic storage class.
+                            They are created when the function is called and destroyed when the function exits.
+                            These variables have local scope and are not accessible outside the block where they are
+                            defined.
+                            auto is rarely used explicitly because it's the default behavior for local variables.
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        <span class="code-color-k">void</span> <span class="code-color-m">exampleFunction</span>() {<br>
+                                        <span class="code-color-m">auto</span> <span class="code-color-k">int</span> x = <span
+                                            class="code-color-k">10</span>; <span class="code-color-c">//auto is
+                                            optional here</span> <br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"%d\n"</span>, x);<br>
+                                        }
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        </p>
+                        <p class="con-description mt-3 mt-md-3">
+                            2.<span class="text-underline-bg">Register Storage Class (register)</span>:
+
+                            Similar to automatic storage class but hints the compiler to store the variable in a CPU
+                            register for faster access.
+                            The use of register is merely a hint to the compiler; it may or may not comply.
+                            Cannot take the address of a register variable.
+                            As with auto, register is rarely used explicitly because compilers are typically efficient
+                            at optimizing variable storage.
+                            c
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        <span class="code-color-k">void</span> <span class="code-color-m">exampleFunction</span>() {<br>
+                                        <span class="code-color-m">register</span> <span class="code-color-k">int</span> y = <span
+                                            class="code-color-k">20</span>;<br>
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"%d\n"</span>, y);<br>
+                                        }<br>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        </p>
+                        <p class="con-description mt-3 mt-md-3">
+                            3.<span class="text-underline-bg">Static Storage Class (static)</span>:
+
+                            Variables declared with static storage class retain their value between function calls.
+                            They have a lifespan throughout the entire program execution.
+                            static variables declared within a function are initialized only once and retain their value
+                            between function calls.
+                            static variables declared at the file scope (outside of any function) are accessible only
+                            within the file in which they are declared.
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        <span class="code-color-k">void</span> <span class="code-color-m">exampleFunction</span>() {<br>
+                                        <span class="code-color-m">static</span> <span class="code-color-k">int</span> z = <span
+                                            class="code-color-k">30</span>;<br>
+                                        <span class="code-color-o">printf</span>(<span
+                                            class="code-color-c">"%d\n"</span>, z);<br>
+                                        z++;<br>
+                                        }<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        </p>
+                        <p class="con-description mt-3 mt-md-3">
+                            4.<span class="text-underline-bg">External or Global Storage Class (extern)</span>:
+
+                            Variables declared with extern storage class are defined outside of any function, typically
+                            at the top of the file or in header files.
+                            They are visible to all functions within the file or, if declared in a header file, to all
+                            files that include that header.
+                            When declared extern, the variable is only declared, not initialized. The actual
+                            initialization happens elsewhere.
+                        <div class="row g-0 justify-content-center p-2 copy-code">
+
+                            <div class="col-12 col-md-10 row g-0 copy-code-container">
+                                <div
+                                    class="d-md-flex justify-content-between align-items-center  p-2 p-sm-1 copy-code-header">
+                                    <div class="col-12 col-md-2  text-center">
+                                        C
+                                    </div>
+                                    <div class="col-12 col-md-2  text-center">
+                                        <button class="copy-button" id="copy-button">Copy code</button>
+                                    </div>
+                                </div>
+                                <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
+
+                                    <div class="code-des">
+                                        <span class="code-color-c">//File1.c</span> <br>
+                                        <span class="code-color-k">int</span> globalVar = <span
+                                            class="code-color-k">40</span>;
+                                        <br>
+                                        <span class="code-color-c">//File2.c</span> <br>
+                                        <span class="code-color-m">extern</span> <span class="code-color-k">int</span> globalVar; <span
+                                            class="code-color-c"> //Declaration of globalVar from File1.c</span><br>
+                                        <span class="code-color-k">void</span> <span class="code-color-m">exampleFunction</span>() {<br>
+                                        <span class="code-color-o">printf</span>(<span
+                                            class="code-color-c">"%d\n"</span>, globalVar);<br>
+                                        }
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        </p>
+
+
+                    </div>
+
+
+                    <div class="row g-0 ">
+                        <div class="col-12 d-flex justify-content-between ">
+                            <button class="prev-btn" id="prev-btn">Prev</button>
+                            <a href="./fourth-c-tutorial.html"><button class="next-btn" id="next-btn">Next</button></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="row g-0 footer-container justify-content-center">
+            <div class="footer col-11 col-md-6 text-center">
+                <label for="" class="footer">© 2024 All Rights Reserved. CODE<span class="sub-title">13</span></label>
+            </div>
+        </footer>
+
+    </div>
+    <div>
+
+    </div>
+
+</body>
+
+<script src="../Script/script.js"></script>
+
+
+</html>
