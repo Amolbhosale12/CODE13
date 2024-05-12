@@ -23,7 +23,8 @@
   background-color: var(--content-bg);
 }
 .card-container {
-  border: 2px solid #dde6e6;
+  /* border: 2px solid #dde6e6; */
+  border:none;
 }
 .c-logo {
   width: 50px;
