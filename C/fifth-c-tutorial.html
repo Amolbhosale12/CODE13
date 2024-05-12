@@ -73,7 +73,7 @@
         <div class="content">
             <div class="row g-0 justify-content-center py-5 py-md-5">
                 <div class="row  g-0 col-10 col-md-8  py-5 py-md-4 con-container px-2 px-md-3">
-                    <div class="py-4 py-md-3 " id="static-dynamic-section">
+                    <div class="py-4 py-md-3 " id="switch-section">
                         <div class="con-title">Switch statement in C</div>
                         <p class="con-description mt-3 mt-md-3">
                             The switch statement in C provides a way to execute different blocks of code based on the
@@ -143,7 +143,7 @@
                             the variable being switched.
                         </p>
                     </div>
-                    <div class="py-4 py-md-3 " id="layout-section">
+                    <div class="py-4 py-md-3 " id="Recursion-section">
                         <div class="con-title">Recursion in C language</div>
                         <p class="con-description mt-3 mt-md-3">
                             Recursion in C language is a programming technique where a function calls itself directly or
@@ -206,7 +206,7 @@
                         </p>
 
                     </div>
-                    <div class="py-4 py-md-3 " id="layout-section">
+                    <div class="py-4 py-md-3 " id="Array-section">
                         <div class="con-title">Array in c language</div>
                         <p class="con-description mt-3 mt-md-3">
                             Arrays in C language are data structures that allow you to store multiple values of the same
@@ -285,7 +285,7 @@
                         </p>
 
                     </div>
-                    <div class="py-4 py-md-3 " id="layout-section">
+                    <div class="py-4 py-md-3 " id="character-section">
                         <div class="con-title">Character in C</div>
                         <p class="con-description mt-3 mt-md-3">
                             char is a data type used to represent a single character. Characters in C are represented
@@ -378,32 +378,7 @@
 
                     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-                    <!--------------------------------------------------------------------------------------------------------->
-
-
-
-
-
-
-
-
-
-
-
-
-                    <div class="py-4 py-md-3 " id="layout-section">
+                    <div class="py-4 py-md-3 " id="structure-section">
                         <div class="con-title">Data structures</div>
                         <p class="con-description mt-3 mt-md-3">
                             In C, it's common to use structures (structs) or unions when you need to store different
@@ -490,7 +465,7 @@
 
 
                     </div>
-                    <div class="py-4 py-md-3 " id="layout-section">
+                    <div class="py-4 py-md-3 " id="union-section">
                         <div class="con-title">Union in c language</div>
                         <p class="con-description mt-3 mt-md-3">
                             Unions in the C programming language allow you to store different types of data in the same
@@ -519,7 +494,8 @@
 
                                         <span class="code-color-c">//Define a struct to store information about a
                                             person</span> <br>
-                                        <span class="code-color-m">struct</span> <span class="code-color-o">Person</span> {<br>
+                                        <span class="code-color-m">struct</span> <span
+                                            class="code-color-o">Person</span> {<br>
                                         <span class="code-color-k">char</span> name[<span
                                             class="code-color-k">50</span>];<br>
                                         <span class="code-color-k">int</span> age;<br>
@@ -528,7 +504,8 @@
 
                                         <span class="code-color-c">//Define a union to store either an integer or a
                                             float<br></span>
-                                            <span class="code-color-m">union</span> <span class="code-color-o">Number</span> {<br>
+                                        <span class="code-color-m">union</span> <span class="code-color-o">Number</span>
+                                        {<br>
                                         <span class="code-color-k">int</span> integer;<br>
                                         <span class="code-color-k">float</span> floating_point;<br>
                                         };<br>
@@ -536,32 +513,42 @@
                                         <span class="code-color-k">int</span> <span class="code-color-m">main</span>()
                                         {<br>
                                         <span class="code-color-c">//Example of using a struct</span> <br>
-                                        <span class="code-color-m">struct</span> <span class="code-color-o">Person</span> <span class="code-color-o">person1</span>;<br>
-                                        <span class="code-color-o">strcpy</span>(person1.name, <span class="code-color-c">"John"</span>);<br>
+                                        <span class="code-color-m">struct</span> <span
+                                            class="code-color-o">Person</span> <span
+                                            class="code-color-o">person1</span>;<br>
+                                        <span class="code-color-o">strcpy</span>(person1.name, <span
+                                            class="code-color-c">"John"</span>);<br>
                                         person1.age = <span class="code-color-k">30</span>;<br>
                                         person1.height = <span class="code-color-k">5.9</span>;<br>
 
-                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Person's name: %s\n"</span>,
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Person's
+                                            name: %s\n"</span>,
                                         person1.name);<br>
-                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Person's age: %d\n"</span>,
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Person's
+                                            age: %d\n"</span>,
                                         person1.age);<br>
-                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Person's height: %.2f\n"</span>,
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Person's
+                                            height: %.2f\n"</span>,
                                         person1.height);<br>
 
                                         <span class="code-color-c">//Example of using a union</span> <br>
-                                        <span class="code-color-m">union</span> <span class="code-color-o">Number</span> num;<br>
+                                        <span class="code-color-m">union</span> <span class="code-color-o">Number</span>
+                                        num;<br>
                                         num.integer = <span class="code-color-k">10</span>;<br>
-                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Integer value: %d\n"</span>,
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Integer
+                                            value: %d\n"</span>,
                                         num.integer);<br>
 
                                         num.floating_point = <span class="code-color-k">3.14</span>;<br>
-                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Float value: %.2f\n"</span>,
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Float
+                                            value: %.2f\n"</span>,
                                         num.floating_point);<br>
 
                                         <span class="code-color-c">/* Notice that after assigning a float value to
                                             the union, the integer value*/
                                             is overwritten</span><br>
-                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Integer value after assigning
+                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"Integer
+                                            value after assigning
                                             float: %d\n"</span>, num.integer);<br>
 
                                         return <span class="code-color-k">0</span>;<br>
@@ -577,7 +564,7 @@
 
 
                     </div>
-                    <div class="py-4 py-md-3 " id="layout-section">
+                    <div class="py-4 py-md-3 " id="storage-section">
                         <div class="con-title">Storage Classes in C</div>
                         <p class="con-description mt-3 mt-md-3">
                             In C programming, storage classes determine the lifetime, scope, and visibility of variables
@@ -608,11 +595,13 @@
                                 <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
 
                                     <div class="code-des">
-                                        <span class="code-color-k">void</span> <span class="code-color-m">exampleFunction</span>() {<br>
-                                        <span class="code-color-m">auto</span> <span class="code-color-k">int</span> x = <span
-                                            class="code-color-k">10</span>; <span class="code-color-c">//auto is
+                                        <span class="code-color-k">void</span> <span
+                                            class="code-color-m">exampleFunction</span>() {<br>
+                                        <span class="code-color-m">auto</span> <span class="code-color-k">int</span> x =
+                                        <span class="code-color-k">10</span>; <span class="code-color-c">//auto is
                                             optional here</span> <br>
-                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"%d\n"</span>, x);<br>
+                                        <span class="code-color-o">printf</span>(<span
+                                            class="code-color-c">"%d\n"</span>, x);<br>
                                         }
 
 
@@ -648,10 +637,12 @@
                                 <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
 
                                     <div class="code-des">
-                                        <span class="code-color-k">void</span> <span class="code-color-m">exampleFunction</span>() {<br>
-                                        <span class="code-color-m">register</span> <span class="code-color-k">int</span> y = <span
-                                            class="code-color-k">20</span>;<br>
-                                        <span class="code-color-o">printf</span>(<span class="code-color-c">"%d\n"</span>, y);<br>
+                                        <span class="code-color-k">void</span> <span
+                                            class="code-color-m">exampleFunction</span>() {<br>
+                                        <span class="code-color-m">register</span> <span class="code-color-k">int</span>
+                                        y = <span class="code-color-k">20</span>;<br>
+                                        <span class="code-color-o">printf</span>(<span
+                                            class="code-color-c">"%d\n"</span>, y);<br>
                                         }<br>
 
 
@@ -687,9 +678,10 @@
                                 <div class="p-2 p-sm-2 textToCopy" id="textToCopy">
 
                                     <div class="code-des">
-                                        <span class="code-color-k">void</span> <span class="code-color-m">exampleFunction</span>() {<br>
-                                        <span class="code-color-m">static</span> <span class="code-color-k">int</span> z = <span
-                                            class="code-color-k">30</span>;<br>
+                                        <span class="code-color-k">void</span> <span
+                                            class="code-color-m">exampleFunction</span>() {<br>
+                                        <span class="code-color-m">static</span> <span class="code-color-k">int</span> z
+                                        = <span class="code-color-k">30</span>;<br>
                                         <span class="code-color-o">printf</span>(<span
                                             class="code-color-c">"%d\n"</span>, z);<br>
                                         z++;<br>
@@ -729,9 +721,11 @@
                                             class="code-color-k">40</span>;
                                         <br>
                                         <span class="code-color-c">//File2.c</span> <br>
-                                        <span class="code-color-m">extern</span> <span class="code-color-k">int</span> globalVar; <span
-                                            class="code-color-c"> //Declaration of globalVar from File1.c</span><br>
-                                        <span class="code-color-k">void</span> <span class="code-color-m">exampleFunction</span>() {<br>
+                                        <span class="code-color-m">extern</span> <span class="code-color-k">int</span>
+                                        globalVar; <span class="code-color-c"> //Declaration of globalVar from
+                                            File1.c</span><br>
+                                        <span class="code-color-k">void</span> <span
+                                            class="code-color-m">exampleFunction</span>() {<br>
                                         <span class="code-color-o">printf</span>(<span
                                             class="code-color-c">"%d\n"</span>, globalVar);<br>
                                         }
